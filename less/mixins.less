@@ -1,0 +1,87 @@
+//
+// Make block element
+// -------------------------------------------------------------------------------------------------
+.make-block-element( @margin ) {
+	margin: @margin 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+//
+// Make container
+// -------------------------------------------------------------------------------------------------
+.make-container( @max-width, @gutter ) {
+	margin: 0 auto;
+	max-width: @max-width;
+	padding: 0 ( @gutter / 2 );
+}
+
+//
+// Make row
+// -------------------------------------------------------------------------------------------------
+.make-row( @gutter ) {
+	display: flex;
+	flex: 0 1 auto;
+	flex-wrap: wrap;
+	margin: 0 ( @gutter / -2 );
+}
+
+//
+// Make columns
+// -------------------------------------------------------------------------------------------------
+.make-columns( @gutter, @screen, @span: 1 ) when ( @span =< 12 ) {
+	.col-@{screen}-@{span} {
+		flex: 0 0 auto;
+		flex-basis: percentage( @span / 12 );
+		max-width: percentage( @span / 12 );
+		padding: 0 ( @gutter / 2 );
+	}
+
+	.make-columns( @gutter, @screen, @span + 1 );
+}
+
+//
+// Add offsets
+// -------------------------------------------------------------------------------------------------
+.add-column-offsets( @screen, @span: 1 ) when ( @span =< 12 ) {
+	.offset-@{screen}-@{span} {
+		margin-left: percentage( @span / 12 );
+	}
+
+	.add-column-offsets( @screen, @span + 1 );
+}
+
+//
+// Separate inline elements
+// -------------------------------------------------------------------------------------------------
+.separate( @content, @margin ) {
+	&:before {
+		content: @content;
+		margin: 0 @margin;
+	}
+
+	&:first-child:before {
+		content: none;
+		margin: 0;
+	}
+}
+
+//
+// Clear floats
+// -------------------------------------------------------------------------------------------------
+.clr {
+	&:after, &:before {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}

@@ -1,0 +1,20 @@
+//
+// Import dependencies
+// -------------------------------------------------------------------------------------------------
+@import "reset.less";
+@import "mixins.less";
+@import "vars.less";
+@import "typography.less";
+@import "wordpress.less";
+
+//
+// Layout styles
+// -------------------------------------------------------------------------------------------------
+body {
+	.make-container( @container-max-width * 2 / 3, @gutter );
+	background-color: @bg-color;
+
+	.site-banner & {
+		max-width: none;
+	}
+}
