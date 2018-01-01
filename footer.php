@@ -14,13 +14,16 @@ do_action( 'fastblog_after_content' );
 ?><footer class="site-footer" role="contentinfo">
 	<div class="container">
 		<span class="copyright">
-			<?php printf( esc_html__( 'Copyright &copy; %1$s ', 'fastblog' ), date( esc_html__( 'Y', 'fastblog' ) ) ); ?>
+			<?php printf( esc_html__( 'Copyright &copy; %1$s', 'fastblog' ), date( esc_html__( 'Y', 'fastblog' ) ) ); ?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 		</span>
 
 		<span class="credits">
-			<?php esc_html_e( 'FastBlog WordPress theme by', 'fastblog' ); ?>
-			<a href="https://www.jiteshpatil.com/" rel="designer"><?php esc_html_e( 'Jitesh Patil', 'fastblog' ); ?></a>
+			<?php esc_html_e( 'Powered by', 'fastblog' ); ?>
+			<a href="https://wordpress.org/" rel="generator"><?php esc_html_e( 'WordPress', 'fastblog' ); ?></a>
+			<?php esc_html_e( '& the', 'fastblog' ); ?>
+			<a href="https://wordpress.org/themes/fastblog/" rel="designer"><?php esc_html_e( 'FastBlog', 'fastblog' ); ?></a>
+			<?php esc_html_e( 'theme', 'fastblog' ); ?>
 		</span>
 	</div>
 </footer><!-- /site-footer -->
