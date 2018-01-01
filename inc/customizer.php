@@ -87,6 +87,14 @@ function fastblog_styles() {
 			}";
 	}
 
+	if ( ! display_header_text() ) {
+		$custom_css .= '
+			.site-title, .site-description {
+				clip: rect( 1px, 1px, 1px, 1px );
+				position: absolute;
+			}';
+	}
+
 	wp_add_inline_style( 'fastblog-style', $custom_css );
 }
 
