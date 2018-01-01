@@ -928,6 +928,11 @@ a img.aligncenter {
   color: white;
   text-decoration: none;
 }
+@media (min-width: 1200px) {
+  .site-header .container {
+    max-width: 1200px;
+  }
+}
 @media (min-width: 992px) {
   .site-header .row {
     align-items: center;
