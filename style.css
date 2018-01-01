@@ -939,16 +939,6 @@ a img.aligncenter {
   color: white;
   position: relative;
 }
-.site-header:before {
-  background-color: black;
-  bottom: 0;
-  content: '';
-  left: 0;
-  opacity: 0.667;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 .site-header > * {
   position: relative;
 }
