@@ -78,15 +78,17 @@
 		text-decoration: none;
 	}
 
-	.container {
-		@media( min-width: @screen-bg ) {
-			max-width: @screen-bg;
-		}
-	}
-
 	.row {
 		@media( min-width: @screen-md ) {
 			align-items: center;
+		}
+	}
+}
+
+.site-banner {
+	.container {
+		@media( min-width: @screen-bg ) {
+			max-width: @screen-bg;
 		}
 	}
 }

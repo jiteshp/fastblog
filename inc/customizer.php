@@ -71,7 +71,13 @@ function fastblog_styles() {
 		}
 
 		.site-header,
-		.site-header a {
+		.site-header a,
+		.site-header .h1, .site-header h1,
+		.site-header .h2, .site-header h2,
+		.site-header .h3, .site-header h3,
+		.site-header .h4, .site-header h4,
+		.site-header .h5, .site-header h5,
+		.site-header .h6, .site-header h6 {
 			color: #{$header_text_color};
 		}
 

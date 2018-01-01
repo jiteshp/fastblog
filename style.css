@@ -270,6 +270,12 @@ table th {
   background-color: #f6f6f6;
   font-weight: bold;
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
 h1,
 h2,
 h3,
@@ -277,10 +283,17 @@ h4,
 h5,
 h6 {
   clear: both;
+  color: #222;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
+.h1:last-child,
+.h2:last-child,
+.h3:last-child,
+.h4:last-child,
+.h5:last-child,
+.h6:last-child,
 h1:last-child,
 h2:last-child,
 h3:last-child,
@@ -289,6 +302,12 @@ h5:last-child,
 h6:last-child {
   margin-bottom: 0;
 }
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a,
 h1 a,
 h2 a,
 h3 a,
@@ -297,6 +316,12 @@ h5 a,
 h6 a {
   text-decoration: none;
 }
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
 h1 small,
 h2 small,
 h3 small,
@@ -309,12 +334,15 @@ h6 small {
   line-height: 2rem;
   text-transform: uppercase;
 }
+.h1,
 h1 {
   font-size: 1.953125em;
 }
+.h2,
 h2 {
   font-size: 1.5625em;
 }
+.h3,
 h3 {
   font-size: 1.25em;
 }
@@ -928,14 +956,14 @@ a img.aligncenter {
   color: white;
   text-decoration: none;
 }
-@media (min-width: 1200px) {
-  .site-header .container {
-    max-width: 1200px;
-  }
-}
 @media (min-width: 992px) {
   .site-header .row {
     align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .site-banner .container {
+    max-width: 1200px;
   }
 }
 .site-branding .custom-logo-link {
