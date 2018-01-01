@@ -70,6 +70,7 @@ function fastblog_customizer_options( $wp_customize ) {
 	 */
 	$wp_customize->add_setting( 'fastblog_header_overlay_opacity', array(
 		'default'			=> '0.7',
+		'sanitize_callback'	=> 'sanitize_text_field',
 	) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fastblog_header_overlay_opacity', array(
 		'active_callback'	=> 'fastblog_show_header_overlay_options',
