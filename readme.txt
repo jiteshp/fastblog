@@ -1,8 +1,8 @@
 === FastBlog ===
 Contributors: jiteshpatil
 Requires at least: WordPress 4.7
-Tested up to: WordPress 4.8.1
-Version: 1.0.5
+Tested up to: WordPress 4.9.1
+Version: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog, responsive
@@ -34,6 +34,15 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.1.0 =
+* Released: January 01, 2018
+
+- Supports header background color customizer option.
+- Supports header overlay color customizer option on front page if custom header image is set.
+- Header is now 1200px wide for screen wider than 1200px.
+- Supports a full page 'Wide Template' for Elementor (or other such) plugin.
+- Fixes the 'Display Site Title and Tagline' customizer issue.
 
 = 1.0.5 =
 * Released: August 28, 2017
