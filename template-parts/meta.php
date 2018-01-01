@@ -16,16 +16,13 @@
 	<?php endif; ?>
 
 	<span class="entry-author">
-		<?php esc_html_e( 'by ', 'fastblog' ); the_author_link(); ?>
+		<em><?php esc_html_e( 'by', 'fastblog' ); ?></em>
+		<?php the_author_link(); ?>
 	</span>
 
 	<span class="entry-time">
-		<?php if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) : ?>
-			<?php esc_html_e( 'Last updated ', 'fastblog' ); ?>
-			<time datetime="<?php the_modified_time( DATE_W3C ); ?>"><?php the_modified_time( 'F j, Y' ); ?></time>
-		<?php else : ?>
-			<time datetime="<?php the_time( DATE_W3C ); ?>"><?php the_time( 'F j, Y' ); ?></time>
-		<?php endif; ?>
+		<em><?php esc_html_e( 'on', 'fastblog' ); ?></em>
+		<time datetime="<?php the_time( DATE_W3C ); ?>"><?php the_time( 'F j, Y' ); ?></time>
 	</span>
 
 	<span class="entry-comments">
