@@ -345,7 +345,9 @@ a:hover {
 }
 abbr[title],
 acronym[title] {
+  border-bottom: 1px dotted #555;
   cursor: help;
+  text-decoration: none;
 }
 code,
 kbd,
