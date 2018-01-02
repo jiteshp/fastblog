@@ -394,6 +394,10 @@ sub {
 sup {
   top: -0.5em;
 }
+u {
+  border-bottom: 1px solid #555;
+  text-decoration: none;
+}
 button,
 input,
 select,
