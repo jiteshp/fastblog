@@ -302,7 +302,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  text-decoration: none;
+  border-bottom: none;
 }
 .h1 small,
 .h2 small,
@@ -335,7 +335,9 @@ h3 {
   font-size: 1.25em;
 }
 a {
+  border-bottom: 1px solid #0077c0;
   color: #0077c0;
+  text-decoration: none;
   transition: all 0.7s;
 }
 a:hover {
@@ -365,8 +367,8 @@ img {
   max-width: 100%;
 }
 ins {
+  border-bottom: 1px solid #999;
   color: #999;
-  text-decoration: underline;
 }
 q:before {
   content: '\201c';

@@ -103,10 +103,11 @@ function fastblog_styles() {
 
 	$custom_css = "
 		a {
+			border-bottom-color: {$accent_color};
 			color: {$accent_color};
 		}
 
-		button, input[type=submit], input[type=button] {
+		.button, button, input[type=submit], input[type=button] {
 			background-color: {$accent_color};
 			border-color: {$accent_color};
 		}
@@ -124,10 +125,6 @@ function fastblog_styles() {
 		.site-header .h5, .site-header h5,
 		.site-header .h6, .site-header h6 {
 			color: #{$header_text_color};
-		}
-
-		.button {
-			background-color: {$accent_color};
 		}";
 
 	if ( is_front_page() && get_header_image() ) {
