@@ -2,14 +2,14 @@
 Contributors: jiteshpatil
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9.1
-Version: 1.2.1
+Version: 1.2.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog, responsive
 
 == Description ==
 
-FastBlog is a simple WordPress theme for marketers and solopreneurs.
+FastBlog is a simple WordPress theme for marketers and bloggers. Supports a hero area, full page wide template for page builders like Elementor and custom colors.
 
 == Installation ==
 
@@ -34,6 +34,13 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.2.2 =
+* Released: January 02, 2018
+
+- Fixes anchor link, insert, underline, abbreviation and acronym tags underlines.
+- Uses a bolder (900) font weight instead of 700.
+- Makes the hero area full width and center aligned.
 
 = 1.2.1 =
 * Released: January 02, 2018
