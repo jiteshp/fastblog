@@ -594,8 +594,15 @@ a img.aligncenter {
 }
 .container {
   margin: 0 auto;
-  max-width: 990px;
+  max-width: 660px;
   padding: 0 15px;
+}
+@media (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    max-width: 990px;
+    padding: 0 15px;
+  }
 }
 .row {
   display: flex;
@@ -953,6 +960,9 @@ a img.aligncenter {
     align-items: center;
   }
 }
+.site-banner .container {
+  max-width: 990px;
+}
 @media (min-width: 1200px) {
   .site-banner .container {
     max-width: 1200px;
@@ -1229,6 +1239,24 @@ a img.aligncenter {
 .entry-content .row [class^=col-] {
   margin-bottom: 1.6em;
   margin-top: 1.6em;
+}
+.entry-author-bio {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  position: relative;
+  text-align: center;
+}
+.entry-author-bio:last-child {
+  border-bottom: 0;
+}
+.entry-author-bio .avatar {
+  border: 4px solid white;
+  border-radius: 50%;
+  left: 50%;
+  position: absolute;
+  top: -32px;
+  transform: translateX(-50%);
 }
 .comments-area {
   padding: 2.4em 0;
