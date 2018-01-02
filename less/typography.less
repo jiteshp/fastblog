@@ -40,7 +40,7 @@ blockquote {
 		display: block;
 		font-size: @small-font-size;
 		font-style: normal;
-		font-weight: bold;
+		font-weight: @bold-font-weight;
 		letter-spacing: 1px;
 		margin-top: @base-line-height-em;
 		text-transform: uppercase;
@@ -61,7 +61,7 @@ pre {
 
 dl {
 	dt {
-		font-weight: bold;
+		font-weight: @bold-font-weight;
 	}
 
 	dd {
@@ -96,7 +96,7 @@ table {
 
 	th {
 		background-color: @block-bg-color;
-		font-weight: bold;
+		font-weight: @bold-font-weight;
 	}
 }
 
@@ -104,7 +104,7 @@ table {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	color: @heading-text-color;
-	font-weight: bold;
+	font-weight: @bold-font-weight;
 	line-height: 1.2;
 	margin-bottom: 1rem;
 
@@ -192,7 +192,7 @@ strike {
 }
 
 strong {
-	font-weight: bold;
+	font-weight: @bold-font-weight;
 }
 
 sub, sup {
@@ -228,7 +228,7 @@ textarea {
 label {
 	color: @meta-text-color;
 	font-size: @small-font-size;
-	font-weight: bold;
+	font-weight: @bold-font-weight;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -239,7 +239,7 @@ button, input[type=button], input[type=submit] {
 	color: white;
 	cursor: pointer;
 	font-size: 1rem;
-	font-weight: bold;
+	font-weight: @bold-font-weight;
 	letter-spacing: 2px;
 	line-height: 2rem;
 	padding: @input-padding;
@@ -259,7 +259,7 @@ button, input[type=button], input[type=submit] {
 	color: white;
 	display: inline-block;
 	font-size: 1rem;
-	font-weight: bold;
+	font-weight: @bold-font-weight;
 	letter-spacing: 2px;
 	line-height: 2rem;
 	text-decoration: none;

@@ -221,7 +221,7 @@ blockquote cite {
   display: block;
   font-size: 0.8em;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 1px;
   margin-top: 1.6em;
   text-transform: uppercase;
@@ -237,7 +237,7 @@ pre {
   tab-size: 4;
 }
 dl dt {
-  font-weight: bold;
+  font-weight: 900;
 }
 dl dd {
   margin-left: 1.6em;
@@ -267,7 +267,7 @@ table th {
 }
 table th {
   background-color: #f6f6f6;
-  font-weight: bold;
+  font-weight: 900;
 }
 .h1,
 .h2,
@@ -283,7 +283,7 @@ h5,
 h6 {
   clear: both;
   color: #222;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -392,7 +392,7 @@ strike {
   text-decoration: line-through;
 }
 strong {
-  font-weight: bold;
+  font-weight: 900;
 }
 sub,
 sup {
@@ -423,7 +423,7 @@ textarea {
 label {
   color: #999;
   font-size: 0.8em;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -435,7 +435,7 @@ input[type=submit] {
   color: white;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 2px;
   line-height: 2rem;
   padding: 0.5rem 1em;
@@ -455,7 +455,7 @@ input[type=submit]:hover {
   color: white;
   display: inline-block;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 2px;
   line-height: 2rem;
   text-decoration: none;
@@ -482,7 +482,7 @@ form p {
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 900;
   height: auto;
   left: 5px;
   line-height: normal;
@@ -983,7 +983,7 @@ a img.aligncenter {
 .site-branding .site-title {
   clear: none;
   font-size: 1.25em;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 1px;
   line-height: 2rem;
   margin-top: 1rem;
@@ -1013,7 +1013,7 @@ a img.aligncenter {
 .primary-menu {
   display: none;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 900;
   left: 0;
   letter-spacing: 1px;
   line-height: 1rem;
@@ -1226,7 +1226,7 @@ a img.aligncenter {
 .comment-reply-title small a {
   border-bottom: none;
   font-size: 0.8em;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -1288,7 +1288,7 @@ a img.aligncenter {
 }
 .comment-body .fn a {
   border-bottom: none;
-  font-weight: bold;
+  font-weight: 900;
 }
 .avatar {
   float: left;
