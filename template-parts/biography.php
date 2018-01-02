@@ -8,6 +8,14 @@
  * @author Jitesh Patil <jitesh.patil@gmail.com>
  * @since 1.0.0
  */
+
+/**
+ * Return if author bio is empty.
+ */
+if ( ! get_the_author_meta( 'description' ) ) {
+	return;
+}
+
 ?><div class="entry-author-bio">
 	<?php echo get_avatar( get_the_author_meta( 'user_email' ), 64 ); ?>
 	<h4 class="author-title"><?php esc_html_e( 'About ', 'fastblog' ); echo get_the_author(); ?></h4>
