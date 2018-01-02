@@ -369,6 +369,7 @@ img {
 ins {
   border-bottom: 1px solid #999;
   color: #999;
+  text-decoration: none;
 }
 q:before {
   content: '\201c';
