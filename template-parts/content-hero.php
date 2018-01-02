@@ -17,21 +17,17 @@ if ( ! $hero_page_id ) {
 
 <div class="site-hero">
 	<div class="container">
-		<div class="row">
-			<?php
-			$hero_pages = new WP_Query( array(
-				'page_id' => $hero_page_id,
-			) );
+		<?php
+		$hero_pages = new WP_Query( array(
+			'page_id' => $hero_page_id,
+		) );
 
-			while ( $hero_pages->have_posts() ) : $hero_pages->the_post(); ?>
-				<div class="col-xs-12 col-md-8">
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
-				</div>
-			<?php
-			endwhile;
+		while ( $hero_pages->have_posts() ) :
+			$hero_pages->the_post();
+			get_template_part( 'template-parts/content', 'page' );
+		endwhile;
 
-			wp_reset_postdata();
-			?>
-		</div>
+		wp_reset_postdata();
+		?>
 	</div>
 </div>

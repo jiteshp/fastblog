@@ -1104,6 +1104,9 @@ a img.aligncenter {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
+.site-hero {
+  text-align: center;
+}
 @media (min-width: 992px) {
   .site-hero {
     padding: 1.6em 0 4.8em 0;
