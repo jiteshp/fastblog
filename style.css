@@ -1354,6 +1354,9 @@ a img.aligncenter {
   border-bottom: none;
   color: #555;
 }
+.sidebar .widget a.button {
+  color: white;
+}
 .sidebar .widget .widget-title {
   color: #555;
   font-size: 1rem;
