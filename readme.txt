@@ -2,7 +2,7 @@
 Contributors: jiteshpatil
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9.1
-Version: 1.2.2
+Version: 1.2.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog, responsive
@@ -41,10 +41,6 @@ GNU General Public License for more details.
 - Fixes anchor link, insert, underline, abbreviation and acronym tags underlines.
 - Uses a bolder (900) font weight instead of 700.
 - Makes the hero area full width and center aligned.
-
-= 1.2.1 =
-* Released: January 02, 2018
-
 - Fixes entry author display in case of empty biography.
 
 = 1.2.0 =
