@@ -2,7 +2,7 @@
 Contributors: jiteshpatil
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9.1
-Version: 1.2.3
+Version: 1.2.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog, responsive
@@ -34,6 +34,12 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.2.4 =
+* Released: February 02, 2018
+
+- Fixes 'Wide' Elementor template content padding & margins.
+
 
 = 1.2.2 =
 * Released: January 02, 2018

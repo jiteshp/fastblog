@@ -1,6 +1,6 @@
 /*!
  * Theme Name: FastBlog
- * Version: 1.2.3
+ * Version: 1.2.4
  * Theme URI: https://wordpress.org/themes/fastblog
  * Author: Jitesh Patil <jitesh.patil@gmail.com>
  * Author URI: https://www.jiteshpatil.com/
@@ -614,5 +614,18 @@
 .no-sidebar, .page-template-no-sidebar {
 	.main {
 		margin-left: percentage( 2 / 12 );
+	}
+}
+
+.elementor-page {
+	.main {
+		.hentry.page {
+			padding-bottom: 0;
+			padding-top: 0;
+
+			.entry-header, .entry-content, .entry-footer {
+				margin: 0;
+			}
+		}
 	}
 }
