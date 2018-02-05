@@ -252,6 +252,13 @@ ul {
   list-style: decimal;
   margin-left: 1.6em;
 }
+ol ol,
+ul ol,
+ol ul,
+ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 ul {
   list-style: disc;
 }
@@ -1405,6 +1412,22 @@ a img.aligncenter {
 .sidebar .widget.widget_media_image {
   border: 0;
   padding: 0;
+}
+.sidebar-footer {
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+  padding: 3.2em 0;
+}
+.sidebar-footer a {
+  border-bottom-color: white;
+  color: white;
+}
+.sidebar-footer .widget-title {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .search-form input[type=search] {
   min-width: 200px;

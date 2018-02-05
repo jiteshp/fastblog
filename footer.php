@@ -11,7 +11,17 @@
 
 do_action( 'fastblog_after_content' );
 
-?><footer class="site-footer" role="contentinfo">
+if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
+	<aside class="sidebar-footer" role="complementary">
+		<div class="container">
+			<div class="row">
+				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
+			</div>
+		</div>
+	</aside>
+<?php endif;?>
+
+<footer class="site-footer" role="contentinfo">
 	<div class="container">
 		<span class="copyright">
 			<?php printf( esc_html__( 'Copyright &copy; %1$s', 'fastblog' ), date( esc_html__( 'Y', 'fastblog' ) ) ); ?>

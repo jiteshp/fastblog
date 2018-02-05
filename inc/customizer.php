@@ -109,7 +109,7 @@ function fastblog_styles() {
 
 		.button, button, input[type=submit], input[type=button] {
 			background-color: {$accent_color};
-			border-color: {$accent_color};
+			border-color: {$accent_color} !important;
 		}
 
 		.site-header {
