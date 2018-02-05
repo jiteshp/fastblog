@@ -42,6 +42,6 @@
 
 		<?php the_tags( '<span class="entry-tags">' . esc_html__( 'Tagged with: ', 'fastblog' ), ', ', '</span>' ); ?>
 	</footer>
-	
+
 	<?php get_template_part( 'template-parts/biography' ); ?>
 </article>
