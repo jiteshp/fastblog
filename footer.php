@@ -21,9 +21,8 @@ do_action( 'fastblog_after_content' );
 		<span class="credits">
 			<?php esc_html_e( 'Powered by', 'fastblog' ); ?>
 			<a href="https://wordpress.org/" rel="generator"><?php esc_html_e( 'WordPress', 'fastblog' ); ?></a>
-			<?php esc_html_e( '& the', 'fastblog' ); ?>
+			<?php esc_html_e( '& ', 'fastblog' ); ?>
 			<a href="https://wordpress.org/themes/fastblog/" rel="designer"><?php esc_html_e( 'FastBlog', 'fastblog' ); ?></a>
-			<?php esc_html_e( 'theme', 'fastblog' ); ?>
 		</span>
 	</div>
 </footer><!-- /site-footer -->
