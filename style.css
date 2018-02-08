@@ -1159,6 +1159,7 @@ a img.aligncenter {
 }
 .pagination {
   border-top: 1px solid #e6e6e6;
+  clear: both;
   margin-top: 2rem;
   padding: 1.5rem 0;
   text-align: center;
@@ -1191,6 +1192,7 @@ a img.aligncenter {
   color: #555;
 }
 .pagination a {
+  border-bottom: 0;
   text-decoration: none;
 }
 .hentry {
