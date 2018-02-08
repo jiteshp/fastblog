@@ -1,6 +1,6 @@
 /*!
  * Theme Name: FastBlog
- * Version: 1.2.5
+ * Version: 1.3.0
  * Theme URI: https://wordpress.org/themes/fastblog
  * Author: Jitesh Patil <jitesh.patil@gmail.com>
  * Author URI: https://www.jiteshpatil.com/
@@ -273,9 +273,15 @@
 //
 // Site content styles
 // -------------------------------------------------------------------------------------------------
+.site-content {
+	padding: 1.5rem 0;
+}
+
 .page-header {
 	border-bottom: 1px solid @border-color;
-	padding: ( @base-line-height-em * 1.5 ) 0;
+	margin-bottom: 1.5rem;
+	padding: 1.5rem 0;
+	text-align: center;
 
 	&:last-child {
 		border-bottom: 0;
@@ -283,7 +289,10 @@
 }
 
 .pagination {
-	padding: ( @base-line-height-em * 1.5 ) 0;
+	border-top: 1px solid @border-color;
+	margin-top: 2rem;
+	padding: 1.5rem 0;
+	text-align: center;
 
 	.page-numbers {
 		background-color: transparent;
@@ -323,11 +332,15 @@
 // Entry styles
 // -------------------------------------------------------------------------------------------------
 .hentry {
-	border-bottom: 1px solid @border-color;
-	padding: ( @base-line-height-em * 1.5 ) 0;
+	padding: 1.5rem 0;
 
 	&:last-child {
 		border-bottom: 0;
+	}
+
+	.single-post & {
+		border-bottom: 1px solid @border-color;
+		padding-bottom: 3rem;
 	}
 }
 
@@ -354,7 +367,12 @@
 }
 
 .entry-header, .entry-content, .entry-footer {
-	.make-block-element( @base-line-height-em );
+	.make-block-element( 1rem );
+	clear: both;
+
+	.single-post & {
+		.make-block-element( @base-line-height-em );
+	}
 }
 
 .entry-title {
@@ -499,10 +517,10 @@
 // Sidebar styles
 // -------------------------------------------------------------------------------------------------
 .sidebar {
-	padding-bottom: @base-line-height-em * 1.5;
+	padding-bottom: 1.5rem;
 
 	@media( min-width: @screen-md ) {
-		padding-top: @base-line-height-em * 1.5;
+		padding-top: 1.5rem;
 	}
 
 	.widget {
