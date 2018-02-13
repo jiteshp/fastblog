@@ -620,7 +620,9 @@
 
 .no-sidebar, .page-template-no-sidebar {
 	.main {
-		margin-left: percentage( 2 / 12 );
+		@media( min-width: @screen-md ) {
+			margin-left: percentage( 2 / 12 );
+		}
 	}
 }
 
