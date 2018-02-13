@@ -18,32 +18,22 @@ address, blockquote, dl, hr, ol, p, pre, table, ul {
 	.make-block-element( @base-line-height-em );
 }
 
-address {
-	font-style: italic;
+address, pre {
+	border: 0.0625rem solid @border-color;
+	padding: ( @base-line-height-em / 2 ) 1.9375rem;
 }
 
-blockquote, pre {
+pre {
 	background-color: @block-bg-color;
-	border: 1px solid @border-color;
-	padding: ( @base-line-height-em / 2 ) @base-line-height-em;
 }
 
 blockquote {
-	font-style: italic;
-
-	&.bonus {
-		background-color: #fef5c4;
-		border-color: #fadf98;
-	}
+	border-left: 0.25rem solid @border-color;
+	padding-left: 1.75rem;
 
 	cite {
 		display: block;
-		font-size: @small-font-size;
-		font-style: normal;
-		font-weight: @bold-font-weight;
-		letter-spacing: 1px;
-		margin-top: @base-line-height-em;
-		text-transform: uppercase;
+		margin-top: 1rem;
 
 		&:before {
 			content: '\2014';
@@ -65,7 +55,7 @@ dl {
 	}
 
 	dd {
-		margin-left: @base-line-height-em;
+		margin-left: 2rem;
 	}
 }
 
@@ -76,7 +66,7 @@ hr {
 
 ol, ul {
 	list-style: decimal;
-	margin-left: @base-line-height-em;
+	margin-left: 2rem;
 
 	ol, ul {
 		margin-bottom: 0;
