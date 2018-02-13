@@ -17,10 +17,15 @@
  * @since 1.0.0
  */
 function fastblog_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'fastblog_content_width', 630 );
+	$content_width = 750; // pixels
+	if ( is_page_template( 'full-width.php' ) ) {
+		$content_width = 1140; // pixels
+	}
+
+	$GLOBALS['content_width'] = apply_filters( 'fastblog_content_width', $content_width );
 }
 
-add_action( 'after_setup_theme', 'fastblog_content_width' );
+add_action( 'template_redirect', 'fastblog_content_width', 0 );
 
 /**
  * Theme setup
