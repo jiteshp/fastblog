@@ -437,9 +437,9 @@ textarea {
 label {
   color: #999;
   font-size: 0.8em;
-  font-weight: 900;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+}
+label .req {
+  color: red;
 }
 button,
 input[type=button],
@@ -1478,7 +1478,6 @@ a img.aligncenter {
   border-color: red;
 }
 .wpcf7 .wpcf7-not-valid-tip {
-  font-style: italic;
   letter-spacing: 0;
   text-transform: none;
 }
