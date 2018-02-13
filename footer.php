@@ -9,17 +9,7 @@
  * @since 1.0.0
  */
 
-do_action( 'fastblog_after_content' );
-
-if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
-	<aside class="sidebar-footer" role="complementary">
-		<div class="container">
-			<div class="row">
-				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
-			</div>
-		</div>
-	</aside>
-<?php endif;?>
+do_action( 'fastblog_after_content' ); ?>
 
 <footer class="site-footer" role="contentinfo">
 	<div class="container">
