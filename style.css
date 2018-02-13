@@ -608,15 +608,8 @@ a img.aligncenter {
 }
 .container {
   margin: 0 auto;
-  max-width: 660px;
+  max-width: 1170px;
   padding: 0 15px;
-}
-@media (min-width: 992px) {
-  .container {
-    margin: 0 auto;
-    max-width: 990px;
-    padding: 0 15px;
-  }
 }
 .row {
   display: flex;
@@ -972,14 +965,6 @@ a img.aligncenter {
 @media (min-width: 992px) {
   .site-header .row {
     align-items: center;
-  }
-}
-.site-banner .container {
-  max-width: 990px;
-}
-@media (min-width: 1200px) {
-  .site-banner .container {
-    max-width: 1200px;
   }
 }
 .site-branding .custom-logo-link {

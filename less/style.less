@@ -24,11 +24,7 @@
 // Layout styles
 // -------------------------------------------------------------------------------------------------
 .container {
-	.make-container( @container-max-width * 2 / 3, @gutter );
-
-	@media ( min-width: @screen-md ) {
-		.make-container( @container-max-width, @gutter );
-	}
+	.make-container( @container-max-width, @gutter );
 }
 
 .row {
@@ -74,17 +70,6 @@
 	.row {
 		@media( min-width: @screen-md ) {
 			align-items: center;
-		}
-	}
-}
-
-.site-banner {
-
-	.container {
-		max-width: @container-max-width;
-
-		@media( min-width: @screen-bg ) {
-			max-width: @screen-bg;
 		}
 	}
 }
@@ -659,6 +644,9 @@
 	}
 }
 
+//
+// Elementor styles
+// -------------------------------------------------------------------------------------------------
 .elementor-page {
 	.site-content {
 		padding: 0;
