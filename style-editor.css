@@ -1012,7 +1012,6 @@ a img.aligncenter {
 .primary-menu {
   display: none;
   font-size: 1rem;
-  font-weight: 900;
   left: 0;
   letter-spacing: 1px;
   line-height: 1rem;
@@ -1065,6 +1064,10 @@ a img.aligncenter {
   .primary-menu .menu-item-has-children:hover > .sub-menu {
     display: block;
   }
+}
+.primary-menu .sub-menu {
+  letter-spacing: 0;
+  text-transform: none;
 }
 @media (min-width: 992px) {
   .primary-menu .sub-menu {
