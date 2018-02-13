@@ -1464,3 +1464,8 @@ a img.aligncenter {
 .elementor-page .main .hentry.page .entry-footer {
   margin: 0;
 }
+.wpcf7 {
+  background: #f6f6f6;
+  border: 1px solid #e6e6e6;
+  padding: 1rem 3rem 2rem 3rem !important;
+}

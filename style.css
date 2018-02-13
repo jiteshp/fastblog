@@ -1464,3 +1464,21 @@ a img.aligncenter {
 .elementor-page .main .hentry.page .entry-footer {
   margin: 0;
 }
+.wpcf7 {
+  background: #f6f6f6;
+  border: 1px solid #e6e6e6;
+  padding: 1rem 3rem 2rem 3rem !important;
+}
+.wpcf7 .wpcf7-response-output {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 1rem !important;
+}
+.wpcf7 .wpcf7-not-valid {
+  border-color: red;
+}
+.wpcf7 .wpcf7-not-valid-tip {
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: none;
+}
