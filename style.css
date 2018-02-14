@@ -1176,12 +1176,12 @@ a img.aligncenter {
 .hentry {
   padding: 1.5rem 0;
 }
-.hentry:last-child {
-  border-bottom: 0;
-}
 .single-post .hentry {
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 3rem;
+}
+.single-post .hentry:last-child {
+  border-bottom: 0;
 }
 .entry-meta {
   color: #999;
