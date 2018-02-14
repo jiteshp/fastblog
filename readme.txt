@@ -2,14 +2,14 @@
 Contributors: jiteshpatil
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9.4
-Version: 1.3.1
+Version: 1.4.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog, responsive
 
 == Description ==
 
-FastBlog is a simple WordPress theme for marketers and bloggers. Supports a hero area, full page wide template for page builders like Elementor and custom colors.
+FastBlog is a simple WordPress theme for marketers and bloggers. Supports a hero area, full page wide template for page builders like Elementor, custom colors and custom fonts.
 
 == Installation ==
 
@@ -34,6 +34,13 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.4.0 =
+* Released: February 14, 2018
+
+- Adds styles for Contact Form 7 plugin.
+- Adds styles for WP Show Posts plugin.
+- Adds support for custom fonts.
 
 = 1.3.0 =
 * Released: February 08, 2018
