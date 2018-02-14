@@ -83,6 +83,28 @@ function fastblog_customizer_options( $wp_customize ) {
 			'step'			=> '0.1',
 		),
 	) ) );
+
+	/**
+	 * Add fonts section.
+	 */
+	$wp_customize->add_section( 'fastblog_fonts', array(
+		'priority'	=> 40,
+		'title'		=> esc_html__( 'Fonts', 'fastblog' ),
+	) );
+
+	/**
+	 * Add fonts selector control.
+	 */
+	$wp_customize->add_setting( 'fastblog_font', array(
+		'default'			=> 0,
+		'sanitize_callback'	=> 'sanitize_text_field',
+	) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fastblog_font', array(
+		'label'		=> esc_html__( 'Select Font', 'fastblog' ),
+		'section'	=> 'fastblog_fonts',
+		'type'		=> 'select',
+		'choices'	=> fastblog_get_font_choices(),
+	) ) );
 }
 
 add_action( 'customize_register', 'fastblog_customizer_options' );
@@ -100,8 +122,13 @@ function fastblog_styles() {
 	$header_overlay_color 	= get_theme_mod( 'fastblog_header_overlay_color', '#000000' );
 	$header_overlay_opacity = get_theme_mod( 'fastblog_header_overlay_opacity', '0.7' );
 	$header_text_color 		= get_header_textcolor();
+	$font					= fastblog_get_font();
 
 	$custom_css = "
+		body {
+			font-family: '{$font}', 'sans serif';
+		}
+
 		a {
 			border-bottom-color: {$accent_color};
 			color: {$accent_color};
@@ -166,4 +193,52 @@ add_action( 'wp_enqueue_scripts', 'fastblog_styles' );
  */
 function fastblog_show_header_overlay_options() {
 	return is_front_page() && get_header_image();
+}
+
+/**
+ * Returns an array of theme fonts.
+ *
+ * @return array of theme fonts & their Google font URLs.
+ * @since 1.4.0
+ */
+function fastblog_get_font_choices() {
+	return array(
+		esc_html__( 'Lato', 'fastblog' ),
+		esc_html__( 'Assistant', 'fastblog' ),
+		esc_html__( 'Barlow', 'fastblog' ),
+		esc_html__( 'Catamaran', 'fastblog' ),
+		esc_html__( 'Hind Guntur', 'fastblog' ),
+		esc_html__( 'Mada', 'fastblog' ),
+		esc_html__( 'Mukta Mahee', 'fastblog' ),
+		esc_html__( 'Nunito Sans', 'fastblog' ),
+		esc_html__( 'Padauk', 'fastblog' ),
+		esc_html__( 'Roboto', 'fastblog' ),
+		esc_html__( 'Source Sans Pro', 'fastblog' ),
+	);
+}
+
+/**
+ * Returns the selected font.
+ *
+ * @return string the name of the selected font.
+ * @since 1.4.0
+ */
+function fastblog_get_font() {
+	$font_index = get_theme_mod( 'fastblog_font', 0 );
+	$font_choices = fastblog_get_font_choices();
+
+	return $font_choices[ $font_index ];
+}
+
+/**
+ * Returns theme font URL.
+ *
+ * @return string the theme font URL
+ * @since 1.4.0
+ */
+function fastblog_get_font_url() {
+	return sprintf(
+		'https://fonts.googleapis.com/css?family=%s:400,400i,700,700i|Inconsolata',
+		fastblog_get_font()
+	);
 }

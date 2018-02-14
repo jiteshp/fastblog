@@ -1195,6 +1195,9 @@ a img.aligncenter {
   content: none;
   margin: 0;
 }
+.entry-meta em {
+  font-style: normal;
+}
 .entry-meta a {
   border-bottom: none;
   color: #999;
