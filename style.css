@@ -1259,17 +1259,12 @@ a img.aligncenter {
   text-transform: uppercase;
 }
 .entry-content .row {
-  margin: -1.6em 0;
-}
-.entry-content .row:first-child {
-  margin-top: 0;
-}
-.entry-content .row:last-child {
-  margin-bottom: 0;
+  margin-bottom: -1rem;
+  margin-top: -1rem;
 }
 .entry-content .row [class^=col-] {
-  margin-bottom: 1.6em;
-  margin-top: 1.6em;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 .entry-author-bio {
   border-top: 1px solid #e6e6e6;

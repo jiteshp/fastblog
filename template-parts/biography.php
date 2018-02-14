@@ -22,8 +22,9 @@ if ( ! get_the_author_meta( 'description' ) ) {
 			<?php echo get_avatar( get_the_author_meta( 'user_email' ), 90 ); ?>
 		</div>
 
-		<div class="col-xs-12 col-sm-10">
+		<div class="col-xs-12 col-md-10">
 			<h4 class="author-title"><?php esc_html_e( 'About ', 'fastblog' ); echo get_the_author(); ?></h4>
+
 			<div class="author-description"><?php the_author_meta( 'description' ); ?></div>
 		</div>
 	</div>

@@ -395,11 +395,12 @@
 
 .entry-content {
 	.row {
-		.make-block-element( @base-line-height-em * -1 );
+		margin-bottom: -1rem;
+		margin-top: -1rem;
 
 		[class^=col-] {
-			margin-bottom: @base-line-height-em;
-			margin-top: @base-line-height-em;
+			padding-bottom: 1rem;
+			padding-top: 1rem;
 		}
 	}
 }
