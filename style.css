@@ -1245,6 +1245,10 @@ a img.aligncenter {
 .entry-image img {
   display: block;
 }
+.entry-image a:hover img {
+  opacity: 0.8;
+  transition: all 0.7s;
+}
 .more-link,
 .comment-body .reply a,
 .comment-reply-title small a {
@@ -1473,4 +1477,23 @@ a img.aligncenter {
 .wpcf7 .wpcf7-not-valid-tip {
   letter-spacing: 0;
   text-transform: none;
+}
+.wp-show-posts {
+  margin: -1.5rem -15px !important;
+}
+.wp-show-posts .hentry {
+  padding: 1.5rem 15px !important;
+}
+.wp-show-posts .wp-show-posts-inner {
+  margin: 0 !important;
+}
+.wp-show-posts .wp-show-posts-image {
+  margin-bottom: 1rem !important;
+}
+.wp-show-posts .wp-show-posts-image a:hover img {
+  opacity: 0.8;
+  transition: all 0.7s;
+}
+.wp-show-posts .wp-show-posts-entry-meta a {
+  border-bottom: 0;
 }
