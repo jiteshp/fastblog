@@ -1143,8 +1143,8 @@ a img.aligncenter {
   text-align: center;
 }
 .pagination .page-numbers {
-  background-color: transparent;
-  border: 1px solid #0077c0;
+  background-color: #e6e6e6;
+  border: 1px solid #c6c6c6;
   border-radius: 4px;
   display: inline-block;
   height: 2.4em;
@@ -1154,13 +1154,12 @@ a img.aligncenter {
   width: 2.4em;
 }
 .pagination .page-numbers:hover {
-  background-color: #0077c0;
-  color: white;
+  background-color: #c6c6c6;
 }
 .pagination .page-numbers.current,
 .pagination .page-numbers.current:hover {
   background-color: transparent;
-  border-color: #555;
+  border-color: #c6c6c6;
   color: #555;
 }
 .pagination .page-numbers.dots,
@@ -1171,6 +1170,7 @@ a img.aligncenter {
 }
 .pagination a {
   border-bottom: 0;
+  color: #555;
   text-decoration: none;
 }
 .hentry {
