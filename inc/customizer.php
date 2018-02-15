@@ -152,6 +152,20 @@ function fastblog_styles() {
 		.site-header .h5, .site-header h5,
 		.site-header .h6, .site-header h6 {
 			color: #{$header_text_color};
+		}
+
+		.primary-menu a {
+			background-color: {$accent_color};
+		}
+
+		@media( min-width: 992px ) {
+			.primary-menu a {
+				background-color: transparent;
+			}
+
+			.primary-menu .sub-menu a {
+				background-color: {$accent_color};
+			}
 		}";
 
 	if ( is_front_page() && get_header_image() ) {

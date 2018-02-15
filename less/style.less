@@ -140,7 +140,7 @@
 	}
 
 	a {
-		background-color: @dark-gray;
+		background-color: @accent-color;
 		border-top: 1px solid fadeout( white, 90% );
 		display: block;
 		padding: 1rem;
@@ -202,8 +202,13 @@
 			}
 
 			@media( min-width: @screen-md ) {
-				background-color: @dark-gray;
+				background-color: @accent-color;
 				border-top: 1px solid fadeout( white, 90% );
+				opacity: 0.8;
+
+				&:hover {
+					opacity: 1;
+				}
 			}
 		}
 	}
