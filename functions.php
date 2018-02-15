@@ -166,8 +166,10 @@ add_filter( 'excerpt_more', 'fastblog_excerpt_more' );
  * @since 1.0.0
  */
 function fastblog_body_class( $classes ) {
-	if ( ! is_active_sidebar( 'sidebar' ) ) {
-		$classes[] = 'no-sidebar';
+	if ( is_single() || ( is_page() && ! is_page_template() ) ) {
+		if ( ! is_active_sidebar( 'sidebar' ) ) {
+			$classes[] = 'no-sidebar';
+		}
 	}
 
 	return $classes;
