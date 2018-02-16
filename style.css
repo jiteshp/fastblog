@@ -1494,11 +1494,6 @@ a img.aligncenter {
     width: 50% !important;
   }
 }
-@media (min-width: 992px) {
-  .wp-show-posts .hentry.wp-show-posts-single {
-    width: 33.33333333% !important;
-  }
-}
 .wp-show-posts .wp-show-posts-inner {
   margin: 0 !important;
 }
