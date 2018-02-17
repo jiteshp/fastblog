@@ -398,8 +398,16 @@ sup {
 }
 u,
 .underline {
-  border-bottom: 2px solid #ffcc00;
+  background-image: url('img/underline.svg');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  padding-bottom: 0.4em;
   text-decoration: none;
+}
+u.green,
+.underline.green {
+  background-image: url('img/underline-green.svg');
 }
 button,
 input,

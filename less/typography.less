@@ -207,8 +207,16 @@ sup {
 }
 
 u, .underline {
-	border-bottom: 2px solid @highlight-color;
+	background-image: url( 'img/underline.svg' );
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 0.3em;
+	padding-bottom: 0.4em;
 	text-decoration: none;
+
+	&.green {
+		background-image: url( 'img/underline-green.svg' );
+	}
 }
 
 //
