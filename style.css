@@ -421,6 +421,19 @@ u.green,
 .underline.green {
   background-image: url('img/underline-green.svg');
 }
+.bonus {
+  margin: 1.6em 0;
+  background-color: #feef84;
+  border: 1px solid #e6e6e6;
+  color: #222;
+  padding: 1.5rem 2rem;
+}
+.bonus:first-child {
+  margin-top: 0;
+}
+.bonus:last-child {
+  margin-bottom: 0;
+}
 button,
 input,
 select,
