@@ -198,6 +198,17 @@ function fastblog_editor_font_style( $mce_init ) {
 add_filter( 'tiny_mce_before_init', 'fastblog_editor_font_style' );
 
 /**
+ * Removes plugin styles if required.
+ *
+ * @since 1.4.6
+ */
+function fastblog_remove_plugin_styles() {
+	wp_deregister_style( 'bcct_style' );
+}
+
+add_action( 'wp_print_styles', 'fastblog_remove_plugin_styles', 100 );
+
+/**
  * Include required files
  */
 include_once get_template_directory() . '/inc/customizer.php';

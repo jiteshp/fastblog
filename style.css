@@ -1516,20 +1516,38 @@ a img.aligncenter {
 .wp-show-posts .wp-show-posts-entry-meta a {
   border-bottom: 0;
 }
-.sidebar .widget.widget_mailerlite_widget {
-  background-color: #f6f6f6;
-  padding: 10px;
+.bctt-click-to-tweet {
+  margin: 1.6em 0;
+  border: 1px solid #e6e6e6;
+  border-left: 0.25rem solid #e6e6e6;
+  display: block;
+  padding: 1.5rem 1.75rem;
+  position: relative;
 }
-.sidebar .widget.widget_mailerlite_widget .subscribe-form h4 {
-  font-weight: 700 !important;
-  line-height: 1.2 !important;
+.bctt-click-to-tweet:first-child {
+  margin-top: 0;
 }
-.sidebar .widget.widget_mailerlite_widget .subscribe-form .form-control {
-  font-family: inherit !important;
-  font-size: 1rem !important;
+.bctt-click-to-tweet:last-child {
+  margin-bottom: 0;
 }
-.sidebar .widget.widget_mailerlite_widget .subscribe-form button[type=submit] {
-  line-height: 1.5rem !important;
-  letter-spacing: 1px !important;
-  text-transform: uppercase !important;
+.bctt-click-to-tweet a {
+  border-bottom: 0;
+  color: #222;
+}
+.bctt-click-to-tweet a.bctt-ctt-btn {
+  background-color: #1dcaff;
+  background-image: url('img/twitter.png');
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1;
+  padding: 3px 5px;
+  padding-left: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
