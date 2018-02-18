@@ -26,8 +26,8 @@
 			?>
 
 			<div class="entry-meta">
-				<span class="entry-time">
-					<time datetime="<?php the_time( DATE_W3C ); ?>"><?php the_time( 'F j, Y' ); ?></time>
+				<span class="entry-category">
+					<?php the_category( ', ' ); ?>
 				</span>
 			</div>
 		</header>
