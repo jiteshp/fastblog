@@ -1,6 +1,6 @@
 /*!
  * Theme Name: FastBlog
- * Version: 1.4.5
+ * Version: 1.5.0
  * Theme URI: https://wordpress.org/themes/fastblog
  * Author: Jitesh Patil <jitesh.patil@gmail.com>
  * Author URI: https://www.jiteshpatil.com/
@@ -379,7 +379,8 @@ img {
   max-width: 100%;
 }
 ins,
-.highlight {
+.highlight,
+.bctt-click-to-tweet .bctt-ctt-text a {
   background-image: linear-gradient(-100deg, rgba(250, 247, 133, 0.4), rgba(250, 247, 133, 0.8) 95%, rgba(250, 247, 133, 0.2));
   border-bottom: 0;
   border-radius: 4px 0 4px 0;
@@ -1534,6 +1535,7 @@ a img.aligncenter {
   border: 1px solid #e6e6e6;
   border-left: 0.25rem solid #e6e6e6;
   display: block;
+  padding: 1.5rem 1.75rem 3rem 1.75rem;
   position: relative;
 }
 .bctt-click-to-tweet:first-child {
@@ -1545,8 +1547,6 @@ a img.aligncenter {
 .bctt-click-to-tweet .bctt-ctt-text a {
   border-bottom: 0;
   color: #222;
-  display: block;
-  padding: 1.5rem 1.75rem 3rem 1.75rem;
 }
 .bctt-click-to-tweet a.bctt-ctt-btn {
   background: url('img/twitter.png') right top no-repeat;
