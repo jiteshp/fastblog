@@ -43,7 +43,7 @@
 				</div>
 
 				<?php if ( has_nav_menu( 'primary-menu' ) ) : ?>
-					<a href="#primary-menu" class="primary-menu-toggle">&#9776;</a>
+					<a href="#primary-menu" class="primary-menu-toggle"><span class="dashicons dashicons-menu"></span></a>
 
 					<nav id="primary-menu" class="primary-menu col-xs-12 col-md-8" role="navigation">
 						<?php

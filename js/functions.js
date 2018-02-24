@@ -14,6 +14,11 @@
 		 */
 		$( '.primary-menu-toggle' ).on( 'click', function( e ) {
 			$( '.primary-menu' ).slideToggle();
+
+			$( this ).find( '.dashicons' )
+					 .toggleClass( 'dashicons-menu' )
+					 .toggleClass( 'dashicons-no' );
+
 			e.preventDefault();
 		} );
 

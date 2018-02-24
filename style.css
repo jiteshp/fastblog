@@ -1012,6 +1012,15 @@ a img.aligncenter {
   top: 2rem;
   width: 2rem;
 }
+.primary-menu-toggle:hover {
+  opacity: 1;
+}
+.primary-menu-toggle .dashicons {
+  font-size: 2rem;
+  line-height: 1;
+  height: 2rem;
+  width: 2rem;
+}
 @media (min-width: 992px) {
   .primary-menu-toggle {
     display: none;
