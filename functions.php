@@ -109,8 +109,8 @@ add_action( 'widgets_init', 'fastblog_sidebar' );
  * @since 1.0.0
  */
 function fastblog_assets() {
-	wp_enqueue_style( 'fastblog-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'fastblog-fonts', fastblog_get_font_url() );
+	wp_enqueue_style( 'fastblog-style', get_stylesheet_uri(), array( 'dashicons', 'fastblog-fonts' ) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

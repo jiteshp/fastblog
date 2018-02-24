@@ -744,7 +744,6 @@
 	}
 
 	a.bctt-ctt-btn {
-		background: url( 'img/twitter.png' ) right top no-repeat;
 		border-bottom: 0;
 		bottom: 1.5rem;
 		color: @meta-text-color;
@@ -752,9 +751,19 @@
 		font-weight: bold;
 		letter-spacing: 1px;
 		line-height: 1rem;
-		padding-right: 20px;
 		position: absolute;
 		right: 1.75rem;
 		text-transform: uppercase;
+
+		&:after {
+			color: #1dcaff;
+			content: '\f301';
+			font-family: 'Dashicons';
+			font-size: 1rem;
+			line-height: 1;
+			margin-left: 3px;
+			position: relative;
+			top: 3px;
+		}
 	}
 }

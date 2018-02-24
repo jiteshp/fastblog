@@ -411,16 +411,8 @@ sup {
 }
 u,
 .underline {
-  background-image: url('img/underline.svg');
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 100% 0.3em;
-  padding-bottom: 0.4em;
+  border-bottom: 3px solid #fc0;
   text-decoration: none;
-}
-u.green,
-.underline.green {
-  background-image: url('img/underline-green.svg');
 }
 .bonus {
   margin: 1.6em 0;
@@ -1549,7 +1541,6 @@ a img.aligncenter {
   color: #222;
 }
 .bctt-click-to-tweet a.bctt-ctt-btn {
-  background: url('img/twitter.png') right top no-repeat;
   border-bottom: 0;
   bottom: 1.5rem;
   color: #999;
@@ -1557,8 +1548,17 @@ a img.aligncenter {
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 1rem;
-  padding-right: 20px;
   position: absolute;
   right: 1.75rem;
   text-transform: uppercase;
+}
+.bctt-click-to-tweet a.bctt-ctt-btn:after {
+  color: #1dcaff;
+  content: '\f301';
+  font-family: 'Dashicons';
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: 3px;
+  position: relative;
+  top: 3px;
 }
