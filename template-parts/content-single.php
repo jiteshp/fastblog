@@ -25,8 +25,13 @@
 			</span>
 
 			<span class="entry-time">
-				<em><?php esc_html_e( 'on', 'fastblog' ); ?></em>
-				<time datetime="<?php the_time( DATE_W3C ); ?>"><?php the_time( 'F j, Y' ); ?></time>
+				<?php if ( get_the_time( 'U' ) != get_the_modified_time( 'U' ) ) : ?>
+					<em><?php esc_html_e( 'updated on', 'fastblog' ); ?></em>
+					<time datetime="<?php the_modified_time( 'DATE_W3C' ); ?>"><?php the_modified_time( 'F j, Y' ); ?></time>
+				<?php else : ?>
+					<em><?php esc_html_e( 'on', 'fastblog' ); ?></em>
+					<time datetime="<?php the_time( 'DATE_W3C' ); ?>"><?php the_time( 'F j, Y' ); ?></time>
+				<?php endif; ?>
 			</span>
 
 			<span class="entry-comments">
