@@ -24,8 +24,13 @@ if ( ! $hero_page_id ) {
 
 		while ( $hero_pages->have_posts() ) :
 			$hero_pages->the_post();
-			get_template_part( 'template-parts/content', 'page' );
-		endwhile;
+
+			the_title( '<div class="entry-header"><p class="entry-title h1">', '</p></div>' ); ?>
+
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+		<?php endwhile;
 
 		wp_reset_postdata();
 		?>
