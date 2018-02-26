@@ -295,7 +295,7 @@ h6 {
   clear: both;
   color: #222;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.334;
   margin-bottom: 1rem;
 }
 .h1:last-child,
@@ -1178,7 +1178,6 @@ a img.aligncenter {
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 1.5rem;
   padding: 1.5rem 0;
-  text-align: center;
 }
 .page-header:last-child {
   border-bottom: 0;
