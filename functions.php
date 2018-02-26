@@ -97,6 +97,15 @@ function fastblog_sidebar() {
 		'before_title'	=> '<h3 class="widget-title">',
 		'after_title'	=> '</h3>',
 	) );
+
+	register_sidebar( array(
+		'id'			=> 'sidebar-hero',
+		'name'			=> esc_html__( 'Hero', 'fastblog' ),
+		'before_widget'	=> '<section id="%1$s" class="widget %2$s">',
+		'after_widget'	=> '</section>',
+		'before_title'	=> '<p class="widget-title h1">',
+		'after_title'	=> '</p>',
+	) );
 }
 
 add_action( 'widgets_init', 'fastblog_sidebar' );

@@ -60,7 +60,7 @@
 
 	<?php
 	if ( is_front_page() ) :
-		get_template_part( 'template-parts/content', 'hero' );
+		get_sidebar( 'hero' );
 	endif;
 	?>
 </header><!-- /site-header -->

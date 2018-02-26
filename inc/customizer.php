@@ -18,21 +18,6 @@
  */
 function fastblog_customizer_options( $wp_customize ) {
 	/**
-	 * Add hero page option.
-	 */
-	$wp_customize->add_setting( 'fastblog_hero_page', array(
-		'default'			=> 0,
-		'sanitize_callback'	=> 'absint',
-	) );
-	$wp_customize->add_control( new WP_Customize_Control(
-		$wp_customize, 'fastblog_hero_page', array(
-			'label'	  => esc_html__( 'Header Content', 'fastblog' ),
-			'section' => 'header_image',
-			'type'	  => 'dropdown-pages',
-		)
-	) );
-
-	/**
 	 * Add color options.
 	 */
 	$fastblog_colors = array(
