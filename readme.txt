@@ -2,7 +2,7 @@
 Contributors: jiteshpatil
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9.4
-Version: 1.5.3
+Version: 1.5.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog, responsive
@@ -34,6 +34,13 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.5.4 =
+* Released: March 4, 2018
+
+- Fixes headings in archive pages.
+- Fixes contact form 7 styles.
+- Fixes input, select, textarea custom font style.
 
 = 1.5.3 =
 * Released: February 26, 2018
