@@ -110,7 +110,7 @@ function fastblog_styles() {
 	$font					= fastblog_get_font();
 
 	$custom_css = "
-		body {
+		body, input, select, textarea {
 			font-family: '{$font}', 'sans serif';
 		}
 
