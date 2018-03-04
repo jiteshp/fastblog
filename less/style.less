@@ -683,7 +683,21 @@
 .wpcf7 {
 	background: @block-bg-color;
 	border: 1px solid @border-color;
-	padding: 1rem 3rem 2rem 3rem !important;
+	margin-bottom: @base-line-height-em !important;
+	margin-top: @base-line-height-em !important;
+	padding: 2rem 3rem !important;
+
+	&:first-child {
+		margin-top: 0 !important;
+	}
+
+	&:last-child {
+		margin-bottom: 0 !important;
+	}
+
+	p {
+		.make-block-element( 0.5rem );
+	}
 
 	.wpcf7-response-output {
 		margin-left: auto !important;
@@ -698,6 +712,17 @@
 	.wpcf7-not-valid-tip {
 		letter-spacing: 0;
 		text-transform: none;
+	}
+
+	.row {
+		margin-bottom: -0.25rem;
+		margin-top: -0.25rem;
+		padding-bottom: 0.5rem;
+
+		[class^=col-] {
+			padding-bottom: 0.25rem;
+			padding-top: 0.25rem;
+		}
 	}
 }
 
