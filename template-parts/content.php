@@ -17,7 +17,7 @@
 	<header class="entry-header">
 		<?php
 		the_title(
-			sprintf( '<h2 class="entry-title h3"><a href="%s">', esc_url( get_permalink() ) ),
+			sprintf( '<h2 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ),
 			'</a></h2>'
 		);
 		get_template_part( 'template-parts/content', 'meta' );
