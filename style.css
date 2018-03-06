@@ -1491,6 +1491,17 @@ a img.aligncenter {
     margin-left: 16.66666667%;
   }
 }
+.page-template-wide-canvas .site-header,
+.page-template-wide-canvas .site-footer {
+  display: none;
+}
+.page-template-wide-no-header .site-header {
+  display: none;
+}
+.page-template-wide-no-menu .primary-menu,
+.page-template-wide-no-menu .primary-menu-toggle {
+  display: none;
+}
 .elementor-page .site-content {
   padding: 0;
 }

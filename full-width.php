@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Full Width Template
+ * Template name: Full Width
  *
  * Displays a full width page.
  *

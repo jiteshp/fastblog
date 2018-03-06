@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: No Sidebar Template
+ * Template name: No Sidebar
  *
  * Displays a page with no sidebar.
  *

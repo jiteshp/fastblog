@@ -1,8 +1,8 @@
 <?php
 /**
- * Template name: Wide (For Elementor)
+ * Template name: Wide Canvas (For Elementor)
  *
- * Displays a full width page.
+ * Displays a full width page with no header or footer.
  *
  * @package FastBlog
  * @author Jitesh Patil <jitesh.patil@gmail.com>
