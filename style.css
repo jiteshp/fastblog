@@ -484,18 +484,26 @@ input[type=button]:hover,
 input[type=submit]:hover {
   opacity: 0.8;
 }
-.button {
+.button,
+.button-min {
   background-color: #0077c0;
+  border: 0.125rem solid #0077c0;
+  border-bottom-width: 0.125rem !important;
+  border-bottom-style: solid !important;
   border-radius: 4px;
   color: white;
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 2px;
-  line-height: 2rem;
+  line-height: 1.875rem;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.5rem 1em;
+}
+.button-min {
+  background-color: transparent !important;
+  color: #0077c0;
 }
 form p {
   margin: 1.2em 0;

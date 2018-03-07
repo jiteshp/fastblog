@@ -274,16 +274,25 @@ button, input[type=button], input[type=submit] {
 
 .button {
 	background-color: @accent-color;
+	border: 0.125rem solid @accent-color;
+	border-bottom-width: 0.125rem !important;
+	border-bottom-style: solid !important;
 	border-radius: 4px;
 	color: white;
 	display: inline-block;
 	font-size: 1rem;
 	font-weight: @bold-font-weight;
 	letter-spacing: 2px;
-	line-height: 2rem;
+	line-height: 1.875rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: @input-padding;
+}
+
+.button-min {
+	&:extend( .button );
+	background-color: transparent !important;
+	color: @accent-color;
 }
 
 form p {
