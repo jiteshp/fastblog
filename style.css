@@ -637,13 +637,13 @@ a img.aligncenter {
 .container {
   margin: 0 auto;
   max-width: 1170px;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .row {
   display: flex;
   flex: 0 1 auto;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0 -24px;
 }
 .row.reverse {
   flex-direction: row-reverse;
@@ -652,73 +652,73 @@ a img.aligncenter {
   flex: 0 0 auto;
   flex-basis: 8.33333333%;
   max-width: 8.33333333%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-2 {
   flex: 0 0 auto;
   flex-basis: 16.66666667%;
   max-width: 16.66666667%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-3 {
   flex: 0 0 auto;
   flex-basis: 25%;
   max-width: 25%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-4 {
   flex: 0 0 auto;
   flex-basis: 33.33333333%;
   max-width: 33.33333333%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-5 {
   flex: 0 0 auto;
   flex-basis: 41.66666667%;
   max-width: 41.66666667%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-6 {
   flex: 0 0 auto;
   flex-basis: 50%;
   max-width: 50%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-7 {
   flex: 0 0 auto;
   flex-basis: 58.33333333%;
   max-width: 58.33333333%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-8 {
   flex: 0 0 auto;
   flex-basis: 66.66666667%;
   max-width: 66.66666667%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-9 {
   flex: 0 0 auto;
   flex-basis: 75%;
   max-width: 75%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-10 {
   flex: 0 0 auto;
   flex-basis: 83.33333333%;
   max-width: 83.33333333%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-11 {
   flex: 0 0 auto;
   flex-basis: 91.66666667%;
   max-width: 91.66666667%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .col-xs-12 {
   flex: 0 0 auto;
   flex-basis: 100%;
   max-width: 100%;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .offset-xs-1 {
   margin-left: 8.33333333%;
@@ -761,73 +761,73 @@ a img.aligncenter {
     flex: 0 0 auto;
     flex-basis: 8.33333333%;
     max-width: 8.33333333%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-2 {
     flex: 0 0 auto;
     flex-basis: 16.66666667%;
     max-width: 16.66666667%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-3 {
     flex: 0 0 auto;
     flex-basis: 25%;
     max-width: 25%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-4 {
     flex: 0 0 auto;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-5 {
     flex: 0 0 auto;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-6 {
     flex: 0 0 auto;
     flex-basis: 50%;
     max-width: 50%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-7 {
     flex: 0 0 auto;
     flex-basis: 58.33333333%;
     max-width: 58.33333333%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-8 {
     flex: 0 0 auto;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-9 {
     flex: 0 0 auto;
     flex-basis: 75%;
     max-width: 75%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-10 {
     flex: 0 0 auto;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-11 {
     flex: 0 0 auto;
     flex-basis: 91.66666667%;
     max-width: 91.66666667%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-sm-12 {
     flex: 0 0 auto;
     flex-basis: 100%;
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .offset-sm-1 {
     margin-left: 8.33333333%;
@@ -871,73 +871,73 @@ a img.aligncenter {
     flex: 0 0 auto;
     flex-basis: 8.33333333%;
     max-width: 8.33333333%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-2 {
     flex: 0 0 auto;
     flex-basis: 16.66666667%;
     max-width: 16.66666667%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-3 {
     flex: 0 0 auto;
     flex-basis: 25%;
     max-width: 25%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-4 {
     flex: 0 0 auto;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-5 {
     flex: 0 0 auto;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-6 {
     flex: 0 0 auto;
     flex-basis: 50%;
     max-width: 50%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-7 {
     flex: 0 0 auto;
     flex-basis: 58.33333333%;
     max-width: 58.33333333%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-8 {
     flex: 0 0 auto;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-9 {
     flex: 0 0 auto;
     flex-basis: 75%;
     max-width: 75%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-10 {
     flex: 0 0 auto;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-11 {
     flex: 0 0 auto;
     flex-basis: 91.66666667%;
     max-width: 91.66666667%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .col-md-12 {
     flex: 0 0 auto;
     flex-basis: 100%;
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
   .offset-md-1 {
     margin-left: 8.33333333%;
@@ -1029,7 +1029,7 @@ a img.aligncenter {
   font-size: 2rem;
   line-height: 2rem;
   position: absolute;
-  right: 15px;
+  right: 24px;
   top: 2rem;
   width: 2rem;
 }
@@ -1415,7 +1415,7 @@ a img.aligncenter {
   font-size: 0.8em;
   line-height: 1.6;
   margin-bottom: 2rem;
-  padding: 30px;
+  padding: 48px;
 }
 .sidebar .widget:last-child {
   margin-bottom: 0;
@@ -1566,10 +1566,10 @@ a img.aligncenter {
   padding-top: 0.25rem;
 }
 .wp-show-posts {
-  margin: -1.5rem -15px !important;
+  margin: -1.5rem -24px !important;
 }
 .wp-show-posts .hentry {
-  padding: 1.5rem 15px !important;
+  padding: 1.5rem 24px !important;
 }
 .wp-show-posts .hentry.wp-show-posts-single {
   width: 100% !important;
