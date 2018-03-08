@@ -25,16 +25,25 @@ function fastblog_customizer_options( $wp_customize ) {
 			'active_callback'	=> '',
 			'default'			=> '#0077C0',
 			'label'				=> esc_html__( 'Accent Color', 'fastblog' ),
+			'description'		=> esc_html__( 'Set color for links & buttons.', 'fastblog' ),
 		),
 		'fastblog_header_bg_color' => array(
 			'active_callback'	=> '',
 			'default'			=> '#000000',
 			'label'				=> esc_html__( 'Header Background Color', 'fastblog' ),
+			'description'		=> esc_html__( 'Set the site header background color.', 'fastblog' ),
+		),
+		'fastblog_header_text_color' => array(
+			'active_callback'	=> '',
+			'default'			=> '#FFFFFF',
+			'label'				=> esc_html__( 'Header Text Color', 'fastblog' ),
+			'description'		=> esc_html__( 'Set the site header text color (menu & hero widgets).', 'fastblog' ),
 		),
 		'fastblog_header_overlay_color' => array(
 			'active_callback'	=> 'fastblog_show_header_overlay_options',
 			'default'			=> '#000000',
 			'label'				=> esc_html__( 'Header Overlay Color', 'fastblog' ),
+			'description'		=> esc_html__( 'Set the site header overlay color.', 'fastblog' ),
 		),
 	);
 
@@ -45,6 +54,7 @@ function fastblog_customizer_options( $wp_customize ) {
 		) );
 		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, $color, array(
 			'active_callback'	=> $atts['active_callback'],
+			'description'		=> $atts['description'],
 			'label'				=> $atts['label'],
 			'section'			=> 'colors',
 		) ) );
@@ -59,6 +69,7 @@ function fastblog_customizer_options( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fastblog_header_overlay_opacity', array(
 		'active_callback'	=> 'fastblog_show_header_overlay_options',
+		'description'		=> esc_html__( 'Set the header overlay opacity (0 to 1).', 'fastblog' ),
 		'label'				=> esc_html__( 'Header Overlay Opacity', 'fastblog' ),
 		'section'			=> 'colors',
 		'type'				=> 'range',
@@ -90,6 +101,13 @@ function fastblog_customizer_options( $wp_customize ) {
 		'type'		=> 'select',
 		'choices'	=> fastblog_get_font_choices(),
 	) ) );
+
+	/**
+	 * Adds descriptions to default colors. Changes header_textcolor label.
+	 */
+	$wp_customize->get_control( 'header_textcolor' )->label = esc_html__( 'Site Title & Tagline Color', 'fastblog' );
+	$wp_customize->get_control( 'header_textcolor' )->description = esc_html__( 'Set the site title & tagline text color.', 'fastblog' );
+	$wp_customize->get_control( 'background_color' )->description = esc_html__( 'Set the page background color.', 'fastblog' );
 }
 
 add_action( 'customize_register', 'fastblog_customizer_options' );
@@ -104,9 +122,10 @@ add_action( 'customize_register', 'fastblog_customizer_options' );
 function fastblog_styles() {
 	$accent_color 			= get_theme_mod( 'fastblog_accent_color', '#0077C0' );
 	$header_bg_color 		= get_theme_mod( 'fastblog_header_bg_color', '#000000' );
+	$header_text_color 		= get_theme_mod( 'fastblog_header_text_color', '#FFFFFF' );
 	$header_overlay_color 	= get_theme_mod( 'fastblog_header_overlay_color', '#000000' );
 	$header_overlay_opacity = get_theme_mod( 'fastblog_header_overlay_opacity', '0.7' );
-	$header_text_color 		= get_header_textcolor();
+	$logo_color				= get_header_textcolor();
 	$font					= fastblog_get_font();
 
 	$custom_css = "
@@ -122,6 +141,7 @@ function fastblog_styles() {
 		.button, .button-min, button, input[type=submit], input[type=button] {
 			background-color: {$accent_color};
 			border-color: {$accent_color} !important;
+			color: white !important;
 		}
 
 		.button-min {
@@ -140,7 +160,13 @@ function fastblog_styles() {
 		.site-header .h4, .site-header h4,
 		.site-header .h5, .site-header h5,
 		.site-header .h6, .site-header h6 {
-			color: #{$header_text_color};
+			color: {$header_text_color};
+		}
+
+		.site-title,
+		.site-title a,
+		.site-description {
+			color: #{$logo_color};
 		}
 
 		.primary-menu a {
