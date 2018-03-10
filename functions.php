@@ -57,6 +57,8 @@ if ( ! function_exists( 'fastblog_setup' ) ) {
 			'width'	  	  => 300,
 		) );
 
+		add_theme_support( 'custom-background' );
+
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1200, 628, true );
 

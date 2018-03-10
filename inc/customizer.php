@@ -166,7 +166,6 @@ function fastblog_styles() {
 	$header_text_color 		= get_theme_mod( 'fastblog_header_text_color', '#FFFFFF' );
 	$header_overlay_color 	= get_theme_mod( 'fastblog_header_overlay_color', '#000000' );
 	$header_overlay_opacity = get_theme_mod( 'fastblog_header_overlay_opacity', '0.7' );
-	$logo_color				= get_header_textcolor();
 	$font					= fastblog_get_font();
 
 	$custom_css = "
@@ -207,7 +206,7 @@ function fastblog_styles() {
 		.site-title,
 		.site-title a,
 		.site-description {
-			color: #{$logo_color};
+			color: #{$header_text_color};
 		}
 
 		.primary-menu a {
@@ -243,7 +242,7 @@ function fastblog_styles() {
 			}";
 	}
 
-	if ( ! display_header_text() ) {
+	if ( ! get_theme_mod( 'header_text', true ) ) {
 		$custom_css .= '
 			.site-title, .site-description {
 				clip: rect( 1px, 1px, 1px, 1px );
