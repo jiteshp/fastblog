@@ -37,10 +37,10 @@ function fastblog_customizer_options( $wp_customize ) {
 			'active_callback'	=> '',
 			'default'			=> '#FFFFFF',
 			'label'				=> esc_html__( 'Header Text Color', 'fastblog' ),
-			'description'		=> esc_html__( 'Set the site header text color (menu & hero widgets).', 'fastblog' ),
+			'description'		=> esc_html__( 'Set the site header text color. Used for menu & hero widgets.', 'fastblog' ),
 		),
 		'fastblog_header_overlay_color' => array(
-			'active_callback'	=> 'fastblog_show_header_overlay_options',
+			'active_callback'	=> 'fastblog_is_hero_area_visible',
 			'default'			=> '#000000',
 			'label'				=> esc_html__( 'Header Overlay Color', 'fastblog' ),
 			'description'		=> esc_html__( 'Set the site header overlay color.', 'fastblog' ),
@@ -68,7 +68,7 @@ function fastblog_customizer_options( $wp_customize ) {
 		'sanitize_callback'	=> 'sanitize_text_field',
 	) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fastblog_header_overlay_opacity', array(
-		'active_callback'	=> 'fastblog_show_header_overlay_options',
+		'active_callback'	=> 'fastblog_is_hero_area_visible',
 		'description'		=> esc_html__( 'Set the header overlay opacity (0 to 1).', 'fastblog' ),
 		'label'				=> esc_html__( 'Header Overlay Opacity', 'fastblog' ),
 		'section'			=> 'colors',
@@ -120,7 +120,7 @@ function fastblog_customizer_options( $wp_customize ) {
 		'sanitize_callback'	=> 'sanitize_text_field',
 	) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'fastblog_hero_bg_image', array(
-		'label'			=> esc_html__( 'Hero Area Background Image', 'fastblog' ),
+		'label'			=> esc_html__( 'Background Image', 'fastblog' ),
 		'description' 	=> esc_html__( 'Set the background image for the hero area.', 'fastblog' ),
 		'section'		=> 'fastblog_hero_area',
 	) ) );
@@ -206,14 +206,14 @@ function fastblog_styles() {
 			}
 		}";
 
-	$hero_bg_image = get_theme_mod( 'fastblog_hero_bg_image', false );
-	if ( is_front_page() && $hero_bg_image ) {
-		$header_image_url = esc_url( get_header_image() );
+	if ( fastblog_is_hero_area_visible() ) {
+		$hero_bg_image = get_theme_mod( 'fastblog_hero_bg_image', false );
+
 		$custom_css .= "
-			.home .site-header {
+			.site-header {
 				background-image: url( '{$hero_bg_image}' );
 			}
-			.home .site-header:before {
+			.site-header:before {
 				background-color: {$header_overlay_color};
 				bottom: 0;
 				content: '';
@@ -293,5 +293,24 @@ function fastblog_get_font_url() {
 	return sprintf(
 		'https://fonts.googleapis.com/css?family=%s:400,400i,700,700i|Inconsolata',
 		fastblog_get_font()
+	);
+}
+
+/**
+ * Is hero area visible?
+ *
+ * @return boolean
+ * @since 1.6.0
+ */
+function fastblog_is_hero_area_visible() {
+	$current_page = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+	$show_on_front = get_option( 'show_on_front' );
+
+	return (
+		is_active_sidebar( 'sidebar-hero' ) &&
+		(
+			( is_home() && 1 == $current_page ) ||
+			( is_front_page() && 'page' == $show_on_front )
+		)
 	);
 }

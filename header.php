@@ -59,7 +59,7 @@
 	</div>
 
 	<?php
-	if ( is_front_page() ) :
+	if ( fastblog_is_hero_area_visible() ) :
 		get_sidebar( 'hero' );
 	endif;
 	?>
