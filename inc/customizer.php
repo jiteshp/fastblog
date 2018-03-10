@@ -81,10 +81,18 @@ function fastblog_customizer_options( $wp_customize ) {
 	) ) );
 
 	/**
+	 * Add theme options panel.
+	 */
+	$wp_customize->add_panel( 'fastblog_theme_options', array(
+		'priority'	=> 60,
+		'title'		=> esc_html__( 'Theme Options', 'fastblog' ),
+	) );
+
+	/**
 	 * Add fonts section.
 	 */
 	$wp_customize->add_section( 'fastblog_fonts', array(
-		'priority'	=> 40,
+		'panel'		=> 'fastblog_theme_options',
 		'title'		=> esc_html__( 'Fonts', 'fastblog' ),
 	) );
 
