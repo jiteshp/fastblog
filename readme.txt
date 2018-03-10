@@ -2,7 +2,7 @@
 Contributors: jiteshpatil
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9.4
-Version: 1.6.0
+Version: 1.6.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog, responsive
@@ -35,6 +35,11 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 1.6.1 =
+* Released: March 10, 2018
+
+- Fixes custom header text bug.
+
 = 1.6.0 =
 * Released: March 10, 2018
 
@@ -42,6 +47,7 @@ GNU General Public License for more details.
 - Moves the 'Fonts' section to the 'Theme Options' panel.
 - Moves the 'Hero Area' section to the 'Theme Options' panel.
 - Moves the 'Miscellaneous' section to the 'Theme Options' panel.
+- Removes custom header.
 
 = 1.5.7 =
 * Released: March 8, 2018
