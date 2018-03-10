@@ -84,7 +84,7 @@ function fastblog_customizer_options( $wp_customize ) {
 	 * Add theme options panel.
 	 */
 	$wp_customize->add_panel( 'fastblog_theme_options', array(
-		'priority'	=> 60,
+		'priority'	=> 40,
 		'title'		=> esc_html__( 'Theme Options', 'fastblog' ),
 	) );
 
@@ -96,9 +96,6 @@ function fastblog_customizer_options( $wp_customize ) {
 		'title'		=> esc_html__( 'Fonts', 'fastblog' ),
 	) );
 
-	/**
-	 * Add fonts selector control.
-	 */
 	$wp_customize->add_setting( 'fastblog_font', array(
 		'default'			=> 0,
 		'sanitize_callback'	=> 'sanitize_text_field',
@@ -108,6 +105,24 @@ function fastblog_customizer_options( $wp_customize ) {
 		'section'	=> 'fastblog_fonts',
 		'type'		=> 'select',
 		'choices'	=> fastblog_get_font_choices(),
+	) ) );
+
+	/**
+	 * Add hero section.
+	 */
+	$wp_customize->add_section( 'fastblog_hero_area', array(
+		'panel'		=> 'fastblog_theme_options',
+		'title'		=> esc_html__( 'Hero Area', 'fastblog' ),
+	) );
+
+	$wp_customize->add_setting( 'fastblog_hero_bg_image', array(
+		'default'			=> false,
+		'sanitize_callback'	=> 'sanitize_text_field',
+	) );
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'fastblog_hero_bg_image', array(
+		'label'			=> esc_html__( 'Hero Area Background Image', 'fastblog' ),
+		'description' 	=> esc_html__( 'Set the background image for the hero area.', 'fastblog' ),
+		'section'		=> 'fastblog_hero_area',
 	) ) );
 
 	/**
@@ -191,11 +206,12 @@ function fastblog_styles() {
 			}
 		}";
 
-	if ( is_front_page() && get_header_image() ) {
+	$hero_bg_image = get_theme_mod( 'fastblog_hero_bg_image', false );
+	if ( is_front_page() && $hero_bg_image ) {
 		$header_image_url = esc_url( get_header_image() );
 		$custom_css .= "
 			.home .site-header {
-				background-image: url( '{$header_image_url}' );
+				background-image: url( '{$hero_bg_image}' );
 			}
 			.home .site-header:before {
 				background-color: {$header_overlay_color};

@@ -57,16 +57,6 @@ if ( ! function_exists( 'fastblog_setup' ) ) {
 			'width'	  	  => 300,
 		) );
 
-		add_theme_support( 'custom-background' );
-
-		add_theme_support( 'custom-header', array(
-			'default-text-color' => 'FFFFFF',
-			'flex-height' 		 => true,
-			'flex-width'  		 => true,
-			'height'  	  		 => 1200,
-			'width'  	  		 => 1600,
-		) );
-
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1200, 628, true );
 
@@ -100,7 +90,7 @@ function fastblog_sidebar() {
 
 	register_sidebar( array(
 		'id'			=> 'sidebar-hero',
-		'name'			=> esc_html__( 'Hero', 'fastblog' ),
+		'name'			=> esc_html__( 'Hero Area', 'fastblog' ),
 		'before_widget'	=> '<section id="%1$s" class="widget %2$s">',
 		'after_widget'	=> '</section>',
 		'before_title'	=> '<p class="widget-title h1">',
