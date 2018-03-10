@@ -121,8 +121,26 @@ function fastblog_customizer_options( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'fastblog_hero_bg_image', array(
 		'label'			=> esc_html__( 'Background Image', 'fastblog' ),
-		'description' 	=> esc_html__( 'Set the background image for the hero area.', 'fastblog' ),
 		'section'		=> 'fastblog_hero_area',
+	) ) );
+
+	/**
+	 * Add miscellaneous section.
+	 */
+	$wp_customize->add_section( 'fastblog_misc', array(
+		'panel'		=> 'fastblog_theme_options',
+		'title'		=> esc_html__( 'Miscellaneous', 'fastblog' ),
+	) );
+
+	$wp_customize->add_setting( 'fastblog_show_post_date', array(
+		'default'			=> true,
+		'sanitize_callback'	=> 'sanitize_text_field',
+	) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fastblog_show_post_date', array(
+		'label'			=> esc_html__( 'Show post date?', 'fastblog' ),
+		'description' 	=> esc_html__( 'Uncheck to hide published & modified dates on blog posts.', 'fastblog' ),
+		'section'		=> 'fastblog_misc',
+		'type'			=> 'checkbox',
 	) ) );
 
 	/**

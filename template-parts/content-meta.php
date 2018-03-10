@@ -20,7 +20,8 @@
 		<?php the_author_link(); ?>
 	</span>
 
-	<span class="entry-time">
+	<?php $entry_time_class = ( ! get_theme_mod( 'fastblog_show_post_date' ) ) ? ' screen-reader-text' : ''; ?>
+	<span class="entry-time<?php echo $entry_time_class; ?>">
 		<?php if ( get_the_time( 'U' ) != get_the_modified_time( 'U' ) ) : ?>
 			<em><?php esc_html_e( 'updated on', 'fastblog' ); ?></em>
 			<time datetime="<?php the_modified_time( 'DATE_W3C' ); ?>"><?php the_modified_time( 'F j, Y' ); ?></time>
@@ -31,6 +32,6 @@
 	</span>
 
 	<span class="entry-comments">
-		<a href="<?php the_permalink(); ?>#comments"><?php comments_number( esc_html__( 'Comments', 'fastblog' ) ); ?></a>
+		<a href="<?php the_permalink(); ?>#comments"><?php comments_number( esc_html__( 'add a comment', 'fastblog' ) ); ?></a>
 	</span>
 </div>
