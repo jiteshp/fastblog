@@ -1305,12 +1305,12 @@ a img.aligncenter {
   text-transform: uppercase;
 }
 .entry-content .row {
-  margin-bottom: -1rem;
-  margin-top: -1rem;
+  margin-bottom: -0.8em;
+  margin-top: -0.8em;
 }
 .entry-content .row [class^=col-] {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 0.8em;
+  padding-top: 0.8em;
 }
 .entry-author-bio {
   border-top: 1px solid #e6e6e6;
