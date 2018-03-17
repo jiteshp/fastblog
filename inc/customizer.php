@@ -111,8 +111,9 @@ function fastblog_customizer_options( $wp_customize ) {
 	 * Add hero section.
 	 */
 	$wp_customize->add_section( 'fastblog_hero_area', array(
-		'panel'		=> 'fastblog_theme_options',
-		'title'		=> esc_html__( 'Hero Area', 'fastblog' ),
+		'panel'				=> 'fastblog_theme_options',
+		'title'				=> esc_html__( 'Hero Area', 'fastblog' ),
+		'active_callback' 	=> 'fastblog_is_hero_area_visible',
 	) );
 
 	$wp_customize->add_setting( 'fastblog_hero_bg_image', array(
@@ -280,6 +281,7 @@ function fastblog_get_font_choices() {
 		esc_html__( 'Hind Guntur', 'fastblog' ),
 		esc_html__( 'Mada', 'fastblog' ),
 		esc_html__( 'Mukta Mahee', 'fastblog' ),
+		esc_html__( 'Muli', 'fastblog' ),
 		esc_html__( 'Nunito Sans', 'fastblog' ),
 		esc_html__( 'Padauk', 'fastblog' ),
 		esc_html__( 'Roboto', 'fastblog' ),
