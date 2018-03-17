@@ -530,8 +530,7 @@
 	padding-top: 1.5rem;
 
 	.widget {
-		border: 1px solid @border-color;
-		border-bottom-width: 3px;
+		background-color: @block-bg-color;
 		color: @meta-text-color;
 		font-size: @small-font-size;
 		line-height: @base-line-height;
@@ -805,5 +804,32 @@
 			position: relative;
 			top: 3px;
 		}
+	}
+}
+
+//
+// Mailerlite styles
+// -------------------------------------------------------------------------------------------------
+.sidebar .widget.widget_mailerlite_widget {
+	border: 0;
+	padding: 0;
+}
+
+.ml-subscribe-form {
+	input.form-control {
+		font-family: inherit !important;
+		font-size: 1rem !important;
+
+		.ml-vertical-align-center & {
+			height: auto !important;
+			line-height: @base-line-height !important;
+			padding: @input-padding !important;
+		}
+	}
+
+	button.primary {
+		height: 43px !important;
+		letter-spacing: 1px !important;
+		text-transform: uppercase !important;
 	}
 }

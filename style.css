@@ -1396,8 +1396,7 @@ a img.aligncenter {
   padding-top: 1.5rem;
 }
 .sidebar .widget {
-  border: 1px solid #e6e6e6;
-  border-bottom-width: 3px;
+  background-color: #f6f6f6;
   color: #999;
   font-size: 0.8em;
   line-height: 1.6;
@@ -1615,4 +1614,22 @@ a img.aligncenter {
   margin-left: 3px;
   position: relative;
   top: 3px;
+}
+.sidebar .widget.widget_mailerlite_widget {
+  border: 0;
+  padding: 0;
+}
+.ml-subscribe-form input.form-control {
+  font-family: inherit !important;
+  font-size: 1rem !important;
+}
+.ml-vertical-align-center .ml-subscribe-form input.form-control {
+  height: auto !important;
+  line-height: 1.6 !important;
+  padding: 0.5rem 1em !important;
+}
+.ml-subscribe-form button.primary {
+  height: 43px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
 }
