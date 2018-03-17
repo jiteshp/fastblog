@@ -282,14 +282,9 @@
 //
 // Site content styles
 // -------------------------------------------------------------------------------------------------
-.site-content {
-	padding: 1.5rem 0;
-}
-
 .page-header {
 	border-bottom: 1px solid @border-color;
-	margin-bottom: 1.5rem;
-	padding: 1.5rem 0;
+	padding: 3rem 0;
 
 	&:last-child {
 		border-bottom: 0;
@@ -297,10 +292,8 @@
 }
 
 .pagination {
-	border-top: 1px solid @border-color;
 	clear: both;
-	margin-top: 2rem;
-	padding: 1.5rem 0;
+	padding: 3rem 0;
 	text-align: center;
 
 	.page-numbers {
@@ -342,15 +335,11 @@
 // Entry styles
 // -------------------------------------------------------------------------------------------------
 .hentry {
-	padding: 1.5rem 0;
+	border-bottom: 1px solid @border-color;
+	padding: 3rem 0;
 
-	.single-post & {
-		border-bottom: 1px solid @border-color;
-		padding-bottom: 3rem;
-
-		&:last-child {
-			border-bottom: 0;
-		}
+	&:last-child {
+		border-bottom: 0;
 	}
 }
 
@@ -538,10 +527,7 @@
 // -------------------------------------------------------------------------------------------------
 .sidebar {
 	padding-bottom: 1.5rem;
-
-	@media( min-width: @screen-md ) {
-		padding-top: 1.5rem;
-	}
+	padding-top: 1.5rem;
 
 	.widget {
 		border: 1px solid @border-color;
@@ -549,7 +535,7 @@
 		color: @meta-text-color;
 		font-size: @small-font-size;
 		line-height: @base-line-height;
-		margin-bottom: 2rem;
+		margin: 1.5rem 0;
 		padding: 3rem;
 
 		&:last-child {
@@ -679,10 +665,6 @@
 // Elementor styles
 // -------------------------------------------------------------------------------------------------
 .elementor-page {
-	.site-content {
-		padding: 0;
-	}
-
 	.main {
 		.hentry.page {
 			padding-bottom: 0;

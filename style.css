@@ -1179,22 +1179,16 @@ a img.aligncenter {
   content: none;
   margin: 0;
 }
-.site-content {
-  padding: 1.5rem 0;
-}
 .page-header {
   border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 1.5rem;
-  padding: 1.5rem 0;
+  padding: 3rem 0;
 }
 .page-header:last-child {
   border-bottom: 0;
 }
 .pagination {
-  border-top: 1px solid #e6e6e6;
   clear: both;
-  margin-top: 2rem;
-  padding: 1.5rem 0;
+  padding: 3rem 0;
   text-align: center;
 }
 .pagination .page-numbers {
@@ -1229,13 +1223,10 @@ a img.aligncenter {
   text-decoration: none;
 }
 .hentry {
-  padding: 1.5rem 0;
-}
-.single-post .hentry {
   border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
 }
-.single-post .hentry:last-child {
+.hentry:last-child {
   border-bottom: 0;
 }
 .entry-meta {
@@ -1402,11 +1393,7 @@ a img.aligncenter {
 }
 .sidebar {
   padding-bottom: 1.5rem;
-}
-@media (min-width: 992px) {
-  .sidebar {
-    padding-top: 1.5rem;
-  }
+  padding-top: 1.5rem;
 }
 .sidebar .widget {
   border: 1px solid #e6e6e6;
@@ -1414,7 +1401,7 @@ a img.aligncenter {
   color: #999;
   font-size: 0.8em;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin: 1.5rem 0;
   padding: 3rem;
 }
 .sidebar .widget:last-child {
@@ -1509,9 +1496,6 @@ a img.aligncenter {
 .page-template-wide-no-menu .primary-menu,
 .page-template-wide-no-menu .primary-menu-toggle {
   display: none;
-}
-.elementor-page .site-content {
-  padding: 0;
 }
 .elementor-page .main .hentry.page {
   padding-bottom: 0;
