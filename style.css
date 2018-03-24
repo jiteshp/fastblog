@@ -1081,6 +1081,10 @@ a img.aligncenter {
     content: none !important;
   }
 }
+.primary-menu li {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .primary-menu .menu,
 .primary-menu .sub-menu {
   list-style: none;
@@ -1409,6 +1413,10 @@ a img.aligncenter {
 }
 .sidebar .widget a.button {
   color: white;
+}
+.sidebar .widget li {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .sidebar .widget .widget-title {
   color: #555;
