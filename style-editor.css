@@ -238,16 +238,16 @@ ul ul {
   margin-bottom: 0;
   margin-top: 0;
 }
-ol.spaced li,
-ul.spaced li {
+ol li,
+ul li {
   margin: 1rem 0;
 }
-ol.spaced li:first-child,
-ul.spaced li:first-child {
+ol li:first-child,
+ul li:first-child {
   margin-top: 0;
 }
-ol.spaced li:last-child,
-ul.spaced li:last-child {
+ol li:last-child,
+ul li:last-child {
   margin-bottom: 0;
 }
 ul {
