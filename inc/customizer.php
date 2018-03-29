@@ -14,6 +14,7 @@
  *
  * Adds customizer options for the hero section.
  *
+ * @param WP_Customize_Manager $wp_customize The customizer.
  * @since 1.0.0
  */
 function fastblog_customizer_options( $wp_customize ) {
@@ -328,8 +329,8 @@ function fastblog_is_hero_area_visible() {
 	return (
 		is_active_sidebar( 'sidebar-hero' ) &&
 		(
-			( is_home() && 1 == $current_page ) ||
-			( is_front_page() && 'page' == $show_on_front )
+			( is_home() && '1' === $current_page ) ||
+			( is_front_page() && 'page' === $show_on_front )
 		)
 	);
 }

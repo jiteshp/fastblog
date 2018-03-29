@@ -9,32 +9,14 @@
  * @since 1.0.0
  */
 
-/**
- * Content width
- *
- * Sets the content width based on the theme's design.
- *
- * @since 1.0.0
- */
-function fastblog_content_width() {
-	$content_width = 750; // pixels
-	if ( is_page_template( 'full-width.php' ) ) {
-		$content_width = 1140; // pixels
-	}
-
-	$GLOBALS['content_width'] = apply_filters( 'fastblog_content_width', $content_width );
-}
-
-add_action( 'template_redirect', 'fastblog_content_width', 0 );
-
-/**
- * Theme setup
- *
- * Adds support for various theme features. Override in child theme by creating your own 'fastblog_setup' function.
- *
- * @since 1.0.0
- */
-if ( ! function_exists( 'fastblog_setup' ) ) {
+if ( ! function_exists( 'fastblog_setup' ) ) :
+	/**
+	 * Theme setup
+	 *
+	 * Adds support for various theme features. Override in child theme by creating your own 'fastblog_setup' function.
+	 *
+	 * @since 1.0.0
+	 */
 	function fastblog_setup() {
 		load_theme_textdomain( 'fastblog' );
 
@@ -72,9 +54,28 @@ if ( ! function_exists( 'fastblog_setup' ) ) {
 			fastblog_get_font_url(),
 		) );
 	}
-} // End if().
+
+endif;
 
 add_action( 'after_setup_theme', 'fastblog_setup' );
+
+/**
+ * Content width
+ *
+ * Sets the content width based on the theme's design.
+ *
+ * @since 1.0.0
+ */
+function fastblog_content_width() {
+	$content_width = 750; // pixels.
+	if ( is_page_template( 'full-width.php' ) ) {
+		$content_width = 1140; // pixels.
+	}
+
+	$GLOBALS['content_width'] = apply_filters( 'fastblog_content_width', $content_width );
+}
+
+add_action( 'template_redirect', 'fastblog_content_width', 0 );
 
 /**
  * Sidebar
@@ -129,7 +130,7 @@ add_action( 'wp_enqueue_scripts', 'fastblog_assets' );
  *
  * Returns a custom excerpt length.
  *
- * @param int $length The default excerpt length
+ * @param int $length The default excerpt length.
  * @return int the custom excerpt length
  * @since 1.0.0
  */
@@ -148,7 +149,7 @@ add_filter( 'excerpt_length', 'fastblog_excerpt_length' );
  *
  * Returns a custom excerpt more markup.
  *
- * @param string $more The default excerpt more markup
+ * @param string $more The default excerpt more markup.
  * @return string the custom excerpt more markup
  * @since 1.0.0
  */
@@ -165,7 +166,7 @@ add_filter( 'excerpt_more', 'fastblog_excerpt_more' );
  *
  * Returns custom body css classes.
  *
- * @param array $classes The default body classes
+ * @param array $classes The default body classes.
  * @return array the custom body classes
  * @since 1.0.0
  */
@@ -184,7 +185,8 @@ add_filter( 'body_class', 'fastblog_body_class' );
 /**
  * Add editor font style.
  *
- * @return void
+ * @param array $mce_init The TinyMCE initizalition args.
+ * @return array
  * @since 1.4.0
  */
 function fastblog_editor_font_style( $mce_init ) {

@@ -17,6 +17,12 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php
+/**
+ * Adds an action to hook into before the site header.
+ */
+do_action( 'fastblog_before_header' ); ?>
+
 <!-- site-header -->
 <header class="site-header" role="banner">
 	<div class="site-banner">
@@ -36,7 +42,7 @@
 
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
+						<p class="site-description"><?php echo esc_html( $description ); ?></p>
 					<?php
 					endif;
 					?>
@@ -65,4 +71,8 @@
 	?>
 </header><!-- /site-header -->
 
-<?php do_action( 'fastblog_before_content' ); ?>
+<?php
+/**
+ * Adds an action to hook into before the site content.
+ */
+do_action( 'fastblog_before_content' ); ?>

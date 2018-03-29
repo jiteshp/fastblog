@@ -9,12 +9,15 @@
  * @since 1.0.0
  */
 
-do_action( 'fastblog_after_content' ); ?>
+/**
+ * Adds an action to hook into before the site footer.
+ */
+do_action( 'fastblog_before_footer' ); ?>
 
 <footer class="site-footer" role="contentinfo">
 	<div class="container">
 		<span class="copyright">
-			<?php printf( esc_html__( 'Copyright &copy; %1$s', 'fastblog' ), date( esc_html__( 'Y', 'fastblog' ) ) ); ?>
+			<?php printf( esc_html__( 'Copyright &copy; %1$s', 'fastblog' ), esc_html( date( 'Y' ) ) ); ?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 		</span>
 
