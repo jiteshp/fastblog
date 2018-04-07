@@ -12,6 +12,10 @@
 ?><article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header>' ); ?>
 
+	<div class="screen-reader-text">
+		<?php get_template_part( 'template-parts/content', 'meta' ); ?>
+	</div>
+
 	<div class="entry-content">
 		<?php
 		the_content();
