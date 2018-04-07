@@ -8,6 +8,7 @@
  * @author Jitesh Patil <jitesh.patil@gmail.com>
  * @since 1.0.0
  */
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
