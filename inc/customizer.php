@@ -329,7 +329,7 @@ function fastblog_is_hero_area_visible() {
 	return (
 		is_active_sidebar( 'sidebar-hero' ) &&
 		(
-			( is_home() && '1' === $current_page ) ||
+			( is_home() && 1 === (int) $current_page ) ||
 			( is_front_page() && 'page' === $show_on_front )
 		)
 	);
